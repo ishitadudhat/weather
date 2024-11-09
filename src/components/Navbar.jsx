@@ -4,7 +4,7 @@ import logo from './image/weather-logo2.png'
 function Navbar() {
     return (
         <div>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <img src={logo} alt='logo' className='logo-img'></img>
                     <p className='logo-text'>TempSphere</p>
@@ -15,21 +15,22 @@ function Navbar() {
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Hourly Forecast</a>
+                                <a class="nav-link" href="#">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">7-Day Forecast</a>
+                                <a class="nav-link" href="#">Contact Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled" aria-disabled="true">Download</a>
+                                <a class="nav-link" href="#">Feedback</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+            
         </div>
     )
 }
